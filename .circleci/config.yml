@@ -12,6 +12,7 @@ jobs:
             apt-get --quiet install --yes python-pip
             pip install -U pip
             pip install awscli
+      - checkout
       - run:
           name: zip code
           command: |
