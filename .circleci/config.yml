@@ -7,9 +7,8 @@ jobs:
       - run:
           name: Install System Packages
           command: |
-            set -xu
-            apt-get update && apt-get -y install zip
-            apt-get --quiet install --yes python-pip
+            sudo apt-get update && apt-get -y install zip
+            sudo apt-get --quiet install --yes python-pip
             pip install -U pip
             pip install awscli
       - run:
