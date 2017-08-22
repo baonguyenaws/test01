@@ -15,8 +15,8 @@ jobs:
       - run:
           name: zip code
           command: |
-          cd /var/www/html
-          zip -r source-hoipla.zip .
+            cd /var/www/html
+            zip -r source-hoipla.zip .
       - run:
           name: Upload code to S3
           command: aws s3 cp source-hoipla.zip s3://iamuser-baonv6456/hoipla-{BRANCH}-{SHORT_COMMIT}.zip
