@@ -10,7 +10,7 @@ jobs:
             sudo apt-get update && apt-get -y install zip
             sudo apt-get --quiet install --yes python-pip
             sudo pip install -U pip
-            pip install awscli
+            sudo pip install awscli
       - run:
           name: zip code
           command: zip -r source-hoipla.zip .
